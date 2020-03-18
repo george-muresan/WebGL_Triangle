@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 2</title>
+    <meta charset="utf-8" />
+</head>
+
+<body onload="initWebGL();">
+    <center>
+        <strong> Use Sliders to Change the Position of Top Vertix <br /> </strong>
+        <subtitle> George Muresan <br /> </subtitle>
+
+        <canvas id="draw_surface" width="400" height="400">
+            Browser does not support WebGL
+        </canvas>
+
+        <form>
+            X: <input type="range" name="x" min="-1" max="1" value="0" class="slider" id="Xid" step=".1" oninput="XidDisplay.value = Xid.value" />
+            <output id="XidDisplay"></output>
+        </form>
+
+        <form>
+            Y: <input type="range" name="y" min="-1" max="1" value="0" class="slider" id="Yid" step=".1" oninput="YidDisplay.value = Yid.value" />
+            <output id="YidDisplay"></output>
+        </form>
+
+        <form>
+            Z: <input type="range" name="z" min="-1" max="1" value="0" class="slider" id="Zid" step=".1" oninput="ZidDisplay.value = Zid.value" />
+            <output id="ZidDisplay"></output>
+        </form>
+
+        <script src="Triangle.js"></script>
+    </center>
+</body>
+</html>
